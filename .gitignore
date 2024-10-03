@@ -162,7 +162,7 @@ cython_debug/
 #.idea/
 
 
-Windows GitIgnore
+# Windows GitIgnore
 
 # Windows thumbnail cache files
 Thumbs.db
