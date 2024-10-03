@@ -1,6 +1,6 @@
 # My Assessment Repository
 
-** By Sharon Curley (G00438863@atu.ie)**
+**By Sharon Curley (G00438863@atu.ie)**
 
 This repository contains my assessment  ubmission for the module Computer Infrastructure
 
