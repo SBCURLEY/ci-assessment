@@ -30,7 +30,7 @@ in the two subfolders
 References
 - Linus Today - Linux mkdir Command Explained for Beginners (with examples)       https://www.linuxtoday.com/news/linux-mkdir-command-explained-for-beginners-with-examples/
 - die.net -  mkdir(2) - Linux man page    https://linux.die.net/man/2/mkdir
-- Stack Overflow: Uploading a empty folder to github [duplicate]  https://stackoverflow.com/questions/8281322/uploading-a-empty-folder-to-github
+- Stack Overflow:  Uploading a empty folder to github [duplicate]  https://stackoverflow.com/questions/8281322/uploading-a-empty-folder-to-github
 
 
 Task 2: Timestamps
