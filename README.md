@@ -2,13 +2,14 @@
 
 **By Sharon Curley (G00438863@atu.ie)**
 
-This repository contains my assessment  ubmission for the module Computer Infrastructure
+This repository contains my assessment  submission for the module Computer Infrastructure
 
 ## Getting Started
 
 1. Clone the repository.
 
 2. Run the Code
+>>>>>>> 7724fa03419d27c1527ae0c7c4c116de9a3bf9d1
 
 
 
@@ -20,11 +21,6 @@ In Task 8, you will write a report summarizing your work on Tasks 1 to 7, so kee
 
 Task 1: Create Directory Structure
 Using the command line, create a directory (that is, a folder) named data at the root of your repository. Inside data, create two subdirectories: timestamps and weather.
-Used mkdir data
-Used touch timestamps to create file
-Used touch weather to create file
-
-![alt text](image.png)
 
 Task 2: Timestamps
 Navigate to the data/timestamps directory. Use the date command to output the current date and time, appending the output to a file named now.txt. Make sure to use the >> operator to append (not overwrite) the file. Repeat this step ten times, then use the more command to verify that now.txt has the expected content.
@@ -64,9 +60,4 @@ In this project, you will automate your weather.sh script to run daily and push 
     6. Commit and Push Changes Back to the Repository Finally, configure the workflow to commit the new weather data and push those changes back to your repository.
     7. Test the Workflow Commit and push the workflow to your repository. Check the logs in GitHub to ensure that the weather.sh script runs correctly, that new data is being committed.
 
-From <https://github.com/ianmcloughlin/2425_computer_infrastructure?tab=readme-ov-file#tasks-40> 
-
-
-
-
-
+From <https://github.com/ianmcloughlin/2425_computer_infrastructure?tab=readme-ov-file#tasks-40
