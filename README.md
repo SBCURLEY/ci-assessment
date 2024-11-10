@@ -22,6 +22,17 @@ In Task 8, you will write a report summarizing your work on Tasks 1 to 7, so kee
 Task 1: Create Directory Structure
 Using the command line, create a directory (that is, a folder) named data at the root of your repository. Inside data, create two subdirectories: timestamps and weather.
 
+I created a folder called data with two sub folders mkdir -p data\weather and a second command mkdir -p data\timestamps. To enable a push to Gitbub, I created test files
+in the two subfolders
+
+![alt text](task_01.png)
+
+References
+- Linus Today - Linux mkdir Command Explained for Beginners (with examples)       https://www.linuxtoday.com/news/linux-mkdir-command-explained-for-beginners-with-examples/
+- die.net -  mkdir(2) - Linux man page    https://linux.die.net/man/2/mkdir
+- Stack Overflow: Uploading a empty folder to github [duplicate]  https://stackoverflow.com/questions/8281322/uploading-a-empty-folder-to-github
+
+
 Task 2: Timestamps
 Navigate to the data/timestamps directory. Use the date command to output the current date and time, appending the output to a file named now.txt. Make sure to use the >> operator to append (not overwrite) the file. Repeat this step ten times, then use the more command to verify that now.txt has the expected content.
 
