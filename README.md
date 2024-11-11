@@ -83,11 +83,61 @@ Change to the data/weather directory. Download the latest weather data for the A
 https://prodapi.metweb.ie/observations/athenry/today.
 
 
+$ wget -O weather.json https://prodapi.metweb.ie/observations/athenry/today
+
+
 Task 6: Timestamp the Data
 Modify the command from Task 5 to save the downloaded file with a timestamped name in the format YYYYmmdd_HHMMSS.json.
 
+
+$ wget -O `date +"%Y%m%d_%H%M%S.json"` https://prodapi.metweb.ie/observations/athenry/today
+
+wget
+-O
+datetimestamp in backticks are essential. Add on .json
+URL
+
+$ wget -O `date +"%Y%m%d_%H%M%S.json"` https://prodapi.metweb.ie/observations/athenry/today
+
+![alt text](task_6_wget.png)
+
+Create a new file with the date and time as a timestamp. It can be run multiple times
+
+$ curl -o `date +"%Y%m%d_%H%M%S.json"` https://prodapi.metweb.ie/observations/athenry/today
+
+![alt text](task_6_curl.png)
+
+curl vs wget
+
+$ curl --verbose -o
+tells you alot of data about the url
+
+
+
 Task 7: Write the Script
 Write a bash script called weather.sh in the root of your repository. This script should automate the process from Task 6, saving the weather data to the data/weather directory. Make the script executable and test it by running it.
+
+#! /bin/bash
+bash is the command line environment we are currently in. Born again shell.
+
+#! /usr/bin/python
+
+wget -O data/weather/`date +"%Y%m%d_%H%M%S.json"` https://prodapi.metweb.ie/observations/athenry/today
+
+ll on root - weather.sh not executable
+![alt text](task_7_rw.png)
+
+Run to make weather.sh executable
+$ chmod u+x ./weather.sh
+
+![alt text](task_7_rwx.png)
+
+Taken a commandthat I typed in the command line, put it into a text file, made the text file executable, 
+now we can run the command at any time using weather.sh
+
+./weather.sh
+
+![alt text](task_7_script.png)
 
 Task 8: Notebook
 Create a notebook called weather.ipynb at the root of your repository. In this notebook, write a brief report explaining how you completed Tasks 1 to 7. Provide short descriptions of the commands used in each task and explain their role in completing the tasks.
