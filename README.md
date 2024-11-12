@@ -127,8 +127,9 @@ wget -O data/weather/`date +"%Y%m%d_%H%M%S.json"` https://prodapi.metweb.ie/obse
 ll on root - weather.sh not executable
 ![alt text](task_7_rw.png)
 
-Run to make weather.sh executable
+Run to make weather.sh executable. Change the mode of the file to execute.
 $ chmod u+x ./weather.sh
+Need to do the ./executable file on Linux
 
 ![alt text](task_7_rwx.png)
 
@@ -139,11 +140,19 @@ now we can run the command at any time using weather.sh
 
 ![alt text](task_7_script.png)
 
+References
+-Askubuntu: How to make a file (e.g. a .sh script) executable, so it can be run from a terminal https://askubuntu.com/questions/229589/how-to-make-a-file-e-g-a-sh-script-executable-so-it-can-be-run-from-a-termi
+-Runcloud:Mastering the Echo Command in Linux (with Practical Examples)  https://runcloud.io/blog/echo-command-in-linux
+-Digital Ocean: How To View and Update the Linux PATH Environment Variable  https://www.digitalocean.com/community/tutorials/how-to-view-and-update-the-linux-path-environment-variable
+
 Task 8: Notebook
 Create a notebook called weather.ipynb at the root of your repository. In this notebook, write a brief report explaining how you completed Tasks 1 to 7. Provide short descriptions of the commands used in each task and explain their role in completing the tasks.
 
 Task 9: pandas
 In your weather.ipynb notebook, use the pandas function read_json() to load in any one of the weather data files you have downloaded with your script. Examine and summarize the data. Use the information provided data.gov.ie to write a short explanation of what the data set contains.
+
+data.gov.ie
+Claremorris
 
 Project (40%)
 In this project, you will automate your weather.sh script to run daily and push the new data to your repository. The following steps will create the necessary GitHub Actions workflow.
