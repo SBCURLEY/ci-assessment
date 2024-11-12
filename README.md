@@ -26,6 +26,7 @@ I created a folder called data with two sub folders mkdir -p data\weather and a 
 in the two subfolders
 
 ![alt text](task_01.png)
+![alt text](image.png)
 
 References
 - Linus Today - Linux mkdir Command Explained for Beginners (with examples)       https://www.linuxtoday.com/news/linux-mkdir-command-explained-for-beginners-with-examples/
