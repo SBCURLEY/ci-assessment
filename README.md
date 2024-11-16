@@ -2,12 +2,10 @@
 
 **By Sharon Curley (G00438863@atu.ie)**
 
-![Image from Virtual Metric.com](.images/image_readme.png)
+![Image from Virtual Metric.com](./images/image_readme.png)
 
-This repository contains my assessment submission for the module Computer Infrastructure
-
-# Git Hub Repository Link
-
+This repository contains my assessment submission for the module Computer Infrastructure.
+My Git Hub Repository Link is as follows
 [SBCURLEY/ci-assessment](hhttps://github.com/SBCURLEY/ci-assessment)
 
 ## Description of Contents
