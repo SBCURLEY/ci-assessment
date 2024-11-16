@@ -8,8 +8,23 @@ This repository contains my assessment submission for the module Computer Infras
 My Git Hub Repository Link is as follows
 [SBCURLEY/ci-assessment](hhttps://github.com/SBCURLEY/ci-assessment)
 
-## Description of Contents
-### Repository Structure
+
+## Installation
+I had to install the below to get started on this repository
+- Python 
+- Visual Studio Code
+- Cmder
+
+
+## Usage
+Once the above is installed is complete, you can run the application using the following on the Command Line
+
+`./weather.sh`
+
+## Dependencies
+
+
+## Repository Structure
 
 1. data folder
     - timestamps folder contains the following
@@ -47,13 +62,7 @@ My Git Hub Repository Link is as follows
 6. weather.sh
 
 
-
-### Built With
-- Python 
-- Visual Studio Code
-- Cmder
-
-### About Author
+## About Author
 - Sharon Curley
   
     My role is a Business Systems Analyst for [Meissner Corporation](https://www.meissner.com/) - a manufacturing company in Castlebar, Co. Mayo. The systems I am supporting currently are Microsoft Dynamics 365 (ERP) for all Meissner entities (Ireland, US, Switzerland, Germany & Italy). I initially started out in functional areas like Customer Service & Supply Chain as I was lucky to be one of the first crew members on board in this company in 2020. I have moved into the IT Dept since March last year. I have a background in SAP - projects & support, so was drawn back into this area when I saw the opportunity arise within Meissner. I have a keen interest in data as when I was a functional user that was the most challenging part of my role - trying to get meaningful data from the systems we use. I have used excel to an advanced level and started with Power BI. I see a lot of opportunities within Meissner to develop in the Data field. I am hoping I will have the skills to do so.
