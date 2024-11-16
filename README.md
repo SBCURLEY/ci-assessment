@@ -22,7 +22,19 @@ Once the above is installed is complete, you can run the application using the f
 `./weather.sh`
 
 ## Dependencies
+The following libraries are required to execute my notebook:
+- `matplotlib.pyplot`: Essential for creating static, animated, and interactive visualizations in Python. It is closely integrated with NumPy and provides a MATLAB-like interface for creating plots and visualizations.
+- `numpy`: It contains functionality for multidimensional arrays, high-level mathematical functions such as linear algebra operations.
+- `pandas`: Fundamental data analysis and manipulation library built on top of the Python programming language. It offers data structures and operations for manipulating numerical tables and time series.
+- `seaborn`: Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
+- `datetime`: The datetime is a built-in module that provides classes for manipulating dates and times
 
+Using python, import the following as per notebook
+`import matplotlib.pyplot as plt`
+`import numpy as np`
+`import pandas as pd`
+`import seaborn as sns`
+`import datetime`
 
 ## Repository Structure
 
