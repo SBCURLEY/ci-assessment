@@ -5,7 +5,8 @@
 ![Image from Virtual Metric.com](./images/image_readme.png)
 
 This repository contains my assessment submission for the module Computer Infrastructure.
-My Git Hub Repository Link is as follows
+My github repository link is as follows:
+
 [SBCURLEY/ci-assessment](hhttps://github.com/SBCURLEY/ci-assessment)
 
 
@@ -14,6 +15,7 @@ I had to install the below to get started on this repository
 - Python 
 - Visual Studio Code
 - Cmder
+- github Codespace
 
 
 ## Usage
@@ -44,21 +46,21 @@ Using python, import the following as per notebook
 ## Repository Structure
 
 1. data folder
-    - timestamps folder contains the following
+    - timestamps folder contains the following:
         - Task 1: Create Directory Structure
-        -   Task 2: Timestamps
-        -   Task 3: Formatting Timestamps
-        -   Task 4: Create Timestamped Files
-    -  weather folder contains the following
-        -   Task 5: Download Today's Weather Data
-        -   Task 6: Timestamp the Data
-        -   Task 7: Write the Script
+        - Task 2: Timestamps
+        - Task 3: Formatting Timestamps
+        - Task 4: Create Timestamped Files
+    -  weather folder contains the following:
+        - Task 5: Download Today's Weather Data
+        - Task 6: Timestamp the Data
+        - Task 7: Write the Script
 
-2. gitignore
+2. Images folder for README & Tasks 1-7
 
-3. edits.md - Week 1
+3. gitignore
 
-4. Images for README & Tasks 1-7
+4. README.md
 
 5. weather.ipynb
 
@@ -77,6 +79,46 @@ Using python, import the following as per notebook
 
 
 6. weather.sh
+
+## References
+
+- All lectures 1-10 -  Computer Infrastructure - Ian McLoughlin
+- Linus Today: Linux mkdir Command Explained for Beginners (with examples) - https://www.linuxtoday.com/news/linux-mkdir-command-explained-for-beginners-with-examples/
+- Linux die.net: mkdir(2) - Linux man page  https://linux.die.net/man/2/mkdir
+- Stack Overflow: Uploading a empty folder to github [duplicate] - https://stackoverflow.com/questions/8281322/uploading-a-empty-folder-to-github
+- Stack Overflow: How to append output to the end of a text file - https://stackoverflow.com/questions/6207573/how-to-append-output-to-the-end-of-a-text-file
+- Linus for Devices: How to append text to the end of a file in Linux - https://www.linuxfordevices.com/tutorials/linux/append-text-to-the-end-of-a-file-in-linux
+- Linus for Devices: The cat and more commands in Linux - https://www.linuxfordevices.com/tutorials/linux/cat-more-command-in-linux
+- Linusize: Grep Command in Linux - https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/
+- Cyberciti: How To Format Date For Display or Use In a Shell Script - https://www.cyberciti.biz/faq/linux-unix-formatting-dates-for-display/
+- Squash: Formatting and Displaying Dates with Bash Scripts in Linux - https://www.squash.io/formatting-and-displaying-dates-with-bash-scripts-in-linux/
+- Turling.com: Using the Linux Free Command With Examples      https://www.turing.com/kb/how-to-use-the-linux-free-command
+- Stack Overflow: How to create a file with todays date in the filename  https://stackoverflow.com/questions/48270960/how-to-create-a-file-with-todays-date-in-the-filename
+- Make Rech easier: How to Use Touch Command in Linux    https://www.maketecheasier.com/use-touch-command-in-linux/
+- Linus Config :Download file from URL on Linux using command line https://linuxconfig.org/download-file-from-url-on-linux-using-command-line
+- How to Geek: How to Use wget, the Ultimate Command Line Downloading Tool  https://www.howtogeek.com/281663/how-to-use-wget-the-ultimate-command-line-downloading-tool/
+- Linus Handbook: What's the Difference Between curl and Wget? https://linuxhandbook.com/curl-wget-difference/
+- The Linux Code: Demystifying the curl vs wget Debate for Linux Users - History - https://thelinuxcode.com/what-is-the-difference-between-wget-vs-curl/
+- Everything Curl - Command line options  https://everything.curl.dev/cmdline/options/index.html
+- Askubuntu: How to make a file (e.g. a .sh script) executable, so it can be run from a terminal https://askubuntu.com/questions/229589/how-to-make-a-file-e-g-a-sh-script-executable-so-it-can-be-run-from-a-termi
+- Runcloud: Mastering the Echo Command in Linux (with Practical Examples)  https://runcloud.io/blog/echo-command-in-linux
+- Digital Ocean: How To View and Update the Linux PATH Environment Variable  https://www.digitalocean.com/community/tutorials/how-to-view-and-update-the-linux-path-environment-variable
+- Pandas Pydata: pandas.read_json   https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_json.html
+- Python Doc: Datetime – Basic date & time types       https://docs.python.org/3/library/datetime.html
+- w3schools Python Date    https://www.w3schools.com/python/python_datetime.asp
+- Real Python: Using Python datetime to Work With Dates and Times     https://realpython.com/python-datetime/
+- Python Tutorial.net: Python datetime     https://www.pythontutorial.net/python-standard-library/python-datetime/
+- Dataquest: Python Datetime Tutorial: Manipulate Times, Dates, and Time Spans     https://www.dataquest.io/blog/python-datetime-tutorial/
+- Datagy: DateTime in Pandas and Python     https://datagy.io/pandas-datetime/
+- Python Doc: Datetime – pandas.to_datetime       https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html
+- Geeks For Geeks: Python | Pandas.to_datetime()       https://www.geeksforgeeks.org/python-pandas-to_datetime/
+- Geeks For Geeks: Python | Pandas DataFrame.set_index()       https://www.geeksforgeeks.org/python-pandas-dataframe-set_index/
+- Real Python: Visualizing Data in Python With Seaborn    https://realpython.com/python-seaborn/
+- Datagy: Seaborn in Python for Data Visualization   https://datagy.io/python-seaborn/
+- Seaborn: Choosing color palettes     https://seaborn.pydata.org/tutorial/color_palettes.html
+
+
+
 
 
 ## About Author
