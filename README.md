@@ -30,10 +30,15 @@ The following libraries are required to execute my notebook:
 - `datetime`: The datetime is a built-in module that provides classes for manipulating dates and times
 
 Using python, import the following as per notebook
+
 `import matplotlib.pyplot as plt`
+
 `import numpy as np`
+
 `import pandas as pd`
+
 `import seaborn as sns`
+
 `import datetime`
 
 ## Repository Structure
