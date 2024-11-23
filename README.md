@@ -7,7 +7,7 @@
 This repository contains my assessment submission for the module Computer Infrastructure.
 My github repository link is as follows:
 
-[SBCURLEY/ci-assessment](hhttps://github.com/SBCURLEY/ci-assessment)
+[SBCURLEY/ci-assessment](https://github.com/SBCURLEY/ci-assessment)
 
 
 ## Installation
@@ -19,7 +19,8 @@ I had to install the below to get started on this repository
 
 
 ## Usage
-Once the above is installed is complete, you can run the application using the following on the Command Line
+Once the above is installed is complete, you can run the application using the following on the Command Line. `weather.sh` is a shell script, so
+bshould be run it using a shell interpreter like `bash` or `sh` (as executable)
 
 `./weather.sh`
 

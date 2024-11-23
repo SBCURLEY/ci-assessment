@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/bash            # a line which tells how the script should be run
 
 date
 echo "Downloading weather data"
