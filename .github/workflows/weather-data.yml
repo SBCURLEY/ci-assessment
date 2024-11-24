@@ -1,36 +1,34 @@
-name: Automate Weather Data Collection      # name
+name: Automate Weather Script
 
-on:                                         # some event happening
-  schedule:                                 # one of the events is on schedule
-    - cron: '0 10 * * *'                    # Run daily at 10:00 am (UTC time)  0 minutes  10 hour 10  wildcard * every day every month every year
-  workflow_dispatch:                        # Allow manual triggering of the workflow. Ian added this in
+on:
+  schedule:
+    # Run daily at 10 AM
+    - cron: '0 10 * * *'
+  workflow_dispatch: # Enable manual triggers
+    inputs: {}
 
 jobs:
   run-weather-script:
-    runs-on: ubuntu-latest                  # latest version of ubuntu linux. In Cloud environments. Most used operating system. 
+    runs-on: ubuntu-latest # Use a Linux (Ubuntu) virtual machine
 
-    steps:                                  # steps that this job has
-      - name: Checkout repository           # Step 1: Checkout the repository
-        uses: actions/checkout@v3           # a github action script        https://github.com/actions/checkout    
+    steps:
+    # Step 1: Checkout the repository
+    - name: Checkout Repository
+      uses: actions/checkout@v3
 
-      - name: Set up shell environment      # Step 2: Set up shell environment
-        run: |
-          chmod +x weather.sh
+    # Step 2: Run the weather.sh script
+    - name: Execute weather.sh
+      run: |
+        chmod +x weather.sh # Ensure the script is executable
+        ./weather.sh
 
-       - name: Run weather script           # Step 3: Run the weather.sh script
-        run: ./weather.sh
-
-      - name: Configure Git                 # Step 4: Configure Git with your details
-        run: |
-          git config --global user.name "Sharon Curley"
-          git config --global user.email "sbrogancurley@gmail.com"
-
-      - name: Commit and push updates        # Step 5: Commit and push changes
-        run: |
-          git add .
-          git commit -m "Automated weather data update"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # Step 3: Commit and push the changes
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Automated update from weather.sh"
+        git push
 
 
