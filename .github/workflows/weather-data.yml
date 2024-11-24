@@ -16,10 +16,10 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    # Step 2: Run the weather.sh script
+    # Step 2: Run the weather.sh script ensuring the script is executable
     - name: Execute weather.sh
       run: |
-        chmod +x weather.sh # Ensure the script is executable
+        chmod +x weather.sh 
         ./weather.sh
 
     # Step 3: Commit and push the changes
