@@ -46,7 +46,10 @@ Using python, import the following as per notebook
 
 ## Repository Structure
 
-1. data folder
+1. .github/workflows
+    - weather-data.yml
+
+2.  data folder
     - timestamps folder contains the following:
         - Task 1: Create Directory Structure
         - Task 2: Timestamps
@@ -63,7 +66,9 @@ Using python, import the following as per notebook
 
 4. README.md
 
-5. weather.ipynb
+5. requirements.txt for any dependent installatons
+
+6. weather.ipynb
 
     - Table of Contents
         - Description
@@ -79,7 +84,7 @@ Using python, import the following as per notebook
     - References
 
 
-6. weather.sh
+7. weather.sh
 
 ## References
 
