@@ -12,20 +12,20 @@ permissions:
 
 jobs:
   run-weather-script:
-    runs-on: ubuntu-latest # Use a Linux (Ubuntu) virtual machine
+    runs-on: ubuntu-latest # Use the latest version of Linux (Ubuntu) virtual machine
 
     steps:
-    # Step 1: Checkout the repository
+    # Checkout the repository
     - name: Checkout Repository
       uses: actions/checkout@v3
 
-    # Step 2: Run the weather.sh script ensuring the script is executable
+    # Run the weather.sh script ensuring the script is executable
     - name: Execute weather.sh
       run: |
         chmod +x weather.sh 
         ./weather.sh
 
-    # Step 3: Commit and push the changes
+    # Commit and push the changes
     - name: Commit and Push Changes
       run: |
         git config --global user.name "github-actions[bot]"
