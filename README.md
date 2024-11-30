@@ -55,7 +55,7 @@ I will go through each line of the script
 name: Automate Weather Script
 ```
 
-    This specifies the name of the workflow as it will appear in the Actions tab of the repository.
+This specifies the name of the workflow as it will appear in the Actions tab of the repository.
 
 ```
 on:
@@ -66,29 +66,28 @@ on:
     inputs: {}
 ```
 
-    The workflow is triggered on a schedule using a CRON expression (0 10 * * *), which means it will run daily at 10:00 AM UTC.
-    CRON syntax:
+The workflow is triggered on a schedule using a CRON expression (0 10 * * *), which means it will run daily at 10:00 AM UTC.
+CRON syntax:
 
-	• 0: At the 0th minute.
+• 0: At the 0th minute.
 
-	• 10: At the 10th hour.
+• 10: At the 10th hour.
 
-	• *: Every day of the month.
+• *: Every day of the month.
 
-	• *: Every month.
+• *: Every month.
 
-	• *: Every day of the week.
-
+• *: Every day of the week.
 The `workflow_dispatch`allows the workflow to be triggered manually by a user via the GitHub Actions UI in the repository.
 `inputs` is an optional section for specifying parameters, which in this case is left empty.
 
 *Referecnes*
 
-    • Cron Tab Guru: Cron schedule expressions  (https://crontab.guru/)
+• Cron Tab Guru: Cron schedule expressions  (https://crontab.guru/)
 
-    • docs.github.com: Manually running a workflow https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow
+• docs.github.com: Manually running a workflow https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow
 
-    • docs.github.com: on.workflow_dispatch.inputs https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
+• docs.github.com: on.workflow_dispatch.inputs https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
 
 
     `permissions:`
