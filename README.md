@@ -47,37 +47,47 @@ Using python, import the following as per notebook
 ## Repository Structure
 
 1. .github/workflows
+
 The github folder is the Project for this module. I have defined a GitHub Actions workflow named Automate Weather Script that automates the execution of a script `weather.sh` daily at 10 AM or via manual trigger. It ensures the results of the script are committed and pushed back to the repository for tracking. It allows manual execution if immediate updates are needed outside the scheduled time.
 I will go through each line of the script
 
     `name: Automate Weather Script`
+
     This specifies the name of the workflow as it will appear in the Actions tab of the repository.
 
 
-    `on:`
+    `on:
 
-        `schedule:`
+        schedule:
 
-            `- cron: '0 10 * * *'`
+            - cron: '0 10 * * *'
 
-        `workflow_dispatch:`
+        workflow_dispatch:
 
-    `inputs: {}`
+        inputs: {}`
 
     The workflow is triggered on a schedule using a CRON expression (0 10 * * *), which means it will run daily at 10:00 AM UTC.
     CRON syntax:
+
 	• 0: At the 0th minute.
+
 	• 10: At the 10th hour.
+
 	• *: Every day of the month.
+
 	• *: Every month.
+
 	• *: Every day of the week.
 
     The `workflow_dispatch`allows the workflow to be triggered manually by a user via the GitHub Actions UI in the repository.
     `inputs` is an optional section for specifying parameters, which in this case is left empty.
 
 *Referecnes*
+
     • Cron Tab Guru: Cron schedule expressions  (https://crontab.guru/)
+
     • docs.github.com: Manually running a workflow https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow
+    
     • docs.github.com: on.workflow_dispatch.inputs https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
 
 
