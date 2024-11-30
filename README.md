@@ -49,20 +49,21 @@ Using python, import the following as per notebook
 1. .github/workflows
 The github folder is the Project for this module. I have defined a GitHub Actions workflow named Automate Weather Script that automates the execution of a script `weather.sh` daily at 10 AM or via manual trigger. It ensures the results of the script are committed and pushed back to the repository for tracking. It allows manual execution if immediate updates are needed outside the scheduled time.
 I will go through each line of the script
-\
-\
-\
+
     `name: Automate Weather Script`
     This specifies the name of the workflow as it will appear in the Actions tab of the repository.
-\
-\
-\
+
+
     `on:`
+
         `schedule:`
+
             `- cron: '0 10 * * *'`
+
         `workflow_dispatch:`
+
     `inputs: {}`
-\
+
     The workflow is triggered on a schedule using a CRON expression (0 10 * * *), which means it will run daily at 10:00 AM UTC.
     CRON syntax:
 	• 0: At the 0th minute.
@@ -70,66 +71,65 @@ I will go through each line of the script
 	• *: Every day of the month.
 	• *: Every month.
 	• *: Every day of the week.
-\
+
     The `workflow_dispatch`allows the workflow to be triggered manually by a user via the GitHub Actions UI in the repository.
     `inputs` is an optional section for specifying parameters, which in this case is left empty.
-\
+
 *Referecnes*
     • Cron Tab Guru: Cron schedule expressions  (https://crontab.guru/)
     • docs.github.com: Manually running a workflow https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow
     • docs.github.com: on.workflow_dispatch.inputs https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
-\
-\
-\ 
+
+
     `permissions:`
+
         `contents: write`
-\
+
     This grants write access to the repository contents, allowing the workflow to commit and push changes back to the repository.
-\
+
 *Referecnes*
     • docs.github.com: Controlling permissions for GITHUB_TOKEN https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token
-\
-\
-\
+
+
     `jobs:`
+
         `run-weather-script:`
+
             `runs-on: ubuntu-latest`
-\
+
     The job name is defined as `run-weather-script`. It runs on a virtual machine. 
     Ubuntu-latest provides a Linux environment with the latest stable Ubuntu version pre-configured with common software.
-\
+
 *Referecnes*
     • github blog: GitHub Actions: Ubuntu-latest workflows will use Ubuntu-22.04 https://github.blog/changelog/2022-11-09-github-actions-ubuntu-latest-workflows-will-use-ubuntu-22-04/
     • docs.github.com: Choosing the runner for a job https://docs.github.com/en/actions/writing-workflows/choosing-where-your-workflow-runs/choosing-the-runner-for-a-job
-\
-\
-\
+
+
     `- name: Checkout Repository`
+
         `uses: actions/checkout@v3`
-\
+
     Step 1 is to check out the Repository with a description name for the step `Checkout repository`. Uses specifies a reusable action, `actions/checkout@v3`, which checks out the repository’s code. This ensures the workflow has access to the repository’s files, including weather.sh.
-\
+
 *Referecnes*
     • github.com: Checkout https://github.com/actions/checkout   noting that this documentation is using Checkout V4 but Checkout V3 is working in my code. 
-\
-\
-\
+
+
    ` - name: Execute weather.sh`
+
       `run: |`
+
         `chmod +x weather.sh `
+
             `./weather.sh`   
-\
+
     Step 2 is to execute the file.  The `name` indicates that this step executes the `weather.sh` script. The `run` executes shell commands directly in the virtual machine. The command `chmod +x weather.sh` ensures weather.sh is executable by adding the executable permission to the script file and `./weather.sh` runs the script from the current directory.
-\
+
 *Referecnes*
     • itsfoss.com: How to Run a Shell Script in Linux [Essentials Explained for Beginners] https://itsfoss.com/run-shell-script-linux/
   	• Geeks for Geeks: What Does "chmod +x " Do and How to Use It? https://www.geeksforgeeks.org/what-does-chmod-x-do-and-how-to-use-it/
-\
-\
-\
-    Step 3 is to commit and push changes using the label `Commit and Push Changes` 
-    Command Details:
-\
+
+
     `- name: Commit and Push Changes`
       `run: |`
         `git config --global user.name "github-actions[bot]"`
@@ -137,29 +137,31 @@ I will go through each line of the script
         `git add .`
         `git commit -m "Automated update from weather.sh"`
         `git push`
- \   
+
+    Step 3 is to commit and push changes using the label `Commit and Push Changes` 
+    Command Details:  
+
     `git config --global user.name "github-actions[bot]"` 
     This command ensures commits show this name in the repository’s history. This is a placeholder name indicating that the commit was made by the automated workflow, not by a specific user. When someone views the repository's commit history, commits made during this workflow will show "github-actions[bot]" as the author.
-\
+
     `git config --global user.email "github-actions[bot]@users.noreply.github.com"`
     This sets the email associated with the commits. This is a special email format used by GitHub for commits made by workflows or bots. It ensures that commits are clearly identified as being made by GitHub Actions and not tied to a specific user's personal email.
-\
+
     `git add` 
     This stages all changes in the working directory for the next commit.
-\
+
     `git commit -m "Automated update from weather.sh"`
     The above creates a new commit with the specified message.
-\
+
     `git push`
     Lastly, this pushes the committed changes to the repository’s remote branch.
-\
+
 *Referecnes*
 	• Github.com: Git Commit https://github.com/git-guides/git-commit
 	• Dev.to: Git Workflow: A Complete Guide for Managing Your Codebase Effectively  Git Workflow: A Complete Guide for Managing Your Codebase Effectively - DEV Community
 	• docs.github.com: Guides for Github Actions - https://docs.github.com/en/actions/guides
-\
-\
-\
+
+
 2.  data folder 
     This folder contains the outputs for the following tasks.
     - timestamps folder contains the following:
@@ -171,25 +173,20 @@ I will go through each line of the script
         - Task 5: Download Today's Weather Data
         - Task 6: Timestamp the Data
         - Task 7: Write the Script
-\
-\
-\
+
+
 3. Images folder for README & Tasks 1-7
-\
-\
-\
+
+
 4. gitignore
-\
-\
-\
+
+
 5. README.md
-\
-\
-\
+
+
 6. requirements.txt for any dependent installations
-\
-\
-\
+
+
 7. `weather.ipynb`
     Please refer to the Jupyter notebook for detailed explanations of each task
     - Table of Contents
@@ -204,14 +201,12 @@ I will go through each line of the script
             -   Task 7: Write the Script
             -   Task 9: Pandas
     - References
-\
-\
-\
+
+
 7. weather.sh
 This is the executable program outlined in Task 9. Please refer to the Jupyter notebook for detailed explanation.
-\
-\
-\
+
+
 ## References 
 All references are listed with each task in the Jupyter Notebook.
 
@@ -249,8 +244,6 @@ All references are listed with each task in the Jupyter Notebook.
 - Real Python: Visualizing Data in Python With Seaborn    https://realpython.com/python-seaborn/
 - Datagy: Seaborn in Python for Data Visualization   https://datagy.io/python-seaborn/
 - Seaborn: Choosing color palettes     https://seaborn.pydata.org/tutorial/color_palettes.html
-
-
 
 
 
