@@ -51,21 +51,20 @@ Using python, import the following as per notebook
 The github folder is the Project for this module. I have defined a GitHub Actions workflow named Automate Weather Script that automates the execution of a script `weather.sh` daily at 10 AM or via manual trigger. It ensures the results of the script are committed and pushed back to the repository for tracking. It allows manual execution if immediate updates are needed outside the scheduled time.
 I will go through each line of the script
 
-`name: Automate Weather Script`
+```
+name: Automate Weather Script
+```
 
     This specifies the name of the workflow as it will appear in the Actions tab of the repository.
 
-
-`on:`
-
-   ``schedule:``
-
-``- cron: '0 10 * * *'``
-
-``workflow_dispatch:``
-
-``inputs: {}``
-
+```
+on:
+  schedule:
+    # Run daily at 10 AM
+    - cron: '0 10 * * *'
+  workflow_dispatch: 
+    inputs: {}
+```
 
     The workflow is triggered on a schedule using a CRON expression (0 10 * * *), which means it will run daily at 10:00 AM UTC.
     CRON syntax:
