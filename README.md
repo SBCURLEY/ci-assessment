@@ -183,14 +183,23 @@ Lastly, this pushes the committed changes to the repository’s remote branch.
 **2.  data folder**
 
 This folder contains the outputs for the following tasks.
+
     - timestamps folder contains the following:
+
         - Task 1: Create Directory Structure
+
         - Task 2: Timestamps
+
         - Task 3: Formatting Timestamps
+
         - Task 4: Create Timestamped Files
+
     -  weather folder contains the following:
+
         - Task 5: Download Today's Weather Data
+
         - Task 6: Timestamp the Data
+
         - Task 7: Write the Script
 <br><br>
 
@@ -200,9 +209,13 @@ This folder contains all the images used in the README & Notebook Tasks 1-9
 <br><br>
 
 **4. gitignore**
+
+This gitignore file specifies intentionally untracked files that Git should ignore.
 <br><br>
 
 **5. README.md**
+
+This file serves as the first point of contact for users and developers who want to understand the purpose, setup, and usage of mt repository.
 <br><br>
 
 **6. requirements.txt**
@@ -213,17 +226,29 @@ This folder contains any dependent installations
 **7. `weather.ipynb`**
 
 Please refer to the Jupyter notebook for detailed explanations of each task
+
     - Table of Contents
+
         - Description
+
         - Explore the Tasks 
+
             -   Task 1: Create Directory Structure
+
             -   Task 2: Timestamps
+
             -   Task 3: Formatting Timestamps
+
             -   Task 4: Create Timestamped Files
+
             -   Task 5: Download Today's Weather Data
+
             -   Task 6: Timestamp the Data
+
             -   Task 7: Write the Script
+
             -   Task 9: Pandas
+
     - References
 <br><br>
 
