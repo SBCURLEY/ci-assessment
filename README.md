@@ -98,9 +98,8 @@ permissions:
 
 This grants write access to the repository contents, allowing the workflow to commit and push changes back to the repository. Without this permission, the workflow will result in errors. 
 
-*References*
-
-• docs.github.com: Controlling permissions for GITHUB_TOKEN https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token
+##### *References*
+##### • docs.github.com: Controlling permissions for GITHUB_TOKEN https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token
 
 
 ```
@@ -112,11 +111,9 @@ jobs:
 The job name is defined as `run-weather-script`. It runs on a virtual machine. 
 Ubuntu-latest provides a Linux environment with the latest stable Ubuntu version pre-configured with common software.
 
-*References*
-
-• github blog: GitHub Actions: Ubuntu-latest workflows will use Ubuntu-22.04 https://github.blog/changelog/2022-11-09-github-actions-ubuntu-latest-workflows-will-use-ubuntu-22-04/
-
-• docs.github.com: Choosing the runner for a job https://docs.github.com/en/actions/writing-workflows/choosing-where-your-workflow-runs/choosing-the-runner-for-a-job
+##### *References*
+##### • github blog: GitHub Actions: Ubuntu-latest workflows will use Ubuntu-22.04 https://github.blog/changelog/2022-11-09-github-actions-ubuntu-latest-workflows-will-use-ubuntu-22-04/
+##### • docs.github.com: Choosing the runner for a job https://docs.github.com/en/actions/writing-workflows/choosing-where-your-workflow-runs/choosing-the-runner-for-a-job
 
 
 ```
@@ -125,9 +122,8 @@ Ubuntu-latest provides a Linux environment with the latest stable Ubuntu version
 ```
 Step 1 is to check out the Repository with a description name for the step `Checkout repository`. Uses specifies a reusable action, `actions/checkout@v3`, which checks out the repository’s code. This ensures the workflow has access to the repository’s files, including weather.sh.
 
-*References*
-
-• github.com: Checkout https://github.com/actions/checkout   noting that this documentation is using Checkout V4 but Checkout V3 is working in my code. 
+##### *References*
+##### • github.com: Checkout https://github.com/actions/checkout   noting that this documentation is using Checkout V4 but Checkout V3 is working in my code. 
 
 
 ```
@@ -138,11 +134,9 @@ Step 1 is to check out the Repository with a description name for the step `Chec
 ```
 Step 2 is to execute the file.  The `name` indicates that this step executes the `weather.sh` script. The `run` executes shell commands directly in the virtual machine. The command `chmod +x weather.sh` ensures weather.sh is executable by adding the executable permission to the script file and `./weather.sh` runs the script from the current directory.
 
-*References*
-
-• itsfoss.com: How to Run a Shell Script in Linux [Essentials Explained for Beginners] https://itsfoss.com/run-shell-script-linux/
-
-• Geeks for Geeks: What Does "chmod +x " Do and How to Use It? https://www.geeksforgeeks.org/what-does-chmod-x-do-and-how-to-use-it/
+##### *References*
+##### • itsfoss.com: How to Run a Shell Script in Linux [Essentials Explained for Beginners] https://itsfoss.com/run-shell-script-linux/
+##### • Geeks for Geeks: What Does "chmod +x " Do and How to Use It? https://www.geeksforgeeks.org/what-does-chmod-x-do-and-how-to-use-it/
 
 
 ```
@@ -179,13 +173,10 @@ The above creates a new commit with the specified message.
 
 Lastly, this pushes the committed changes to the repository’s remote branch.
 
-*References*
-
-• Github.com: Git Commit https://github.com/git-guides/git-commit
-
-• Dev.to: Git Workflow: A Complete Guide for Managing Your Codebase Effectively  Git Workflow: A Complete Guide for Managing Your Codebase Effectively - DEV Community
-
-• docs.github.com: Guides for Github Actions - https://docs.github.com/en/actions/guides
+##### *References*
+##### • Github.com: Git Commit https://github.com/git-guides/git-commit
+##### • Dev.to: Git Workflow: A Complete Guide for Managing Your Codebase Effectively  Git Workflow: A Complete Guide for Managing Your Codebase Effectively - DEV Community
+##### • docs.github.com: Guides for Github Actions - https://docs.github.com/en/actions/guides
 
 
 **2.  data folder**
@@ -242,40 +233,40 @@ This is the executable program outlined in Task 9. Please refer to the Jupyter n
 ## References 
 All references are listed with each task in the Jupyter Notebook.
 
-- All lectures 1-10 -  Computer Infrastructure - Ian McLoughlin
-- Linus Today: Linux mkdir Command Explained for Beginners (with examples) - https://www.linuxtoday.com/news/linux-mkdir-command-explained-for-beginners-with-examples/
-- Linux die.net: mkdir(2) - Linux man page  https://linux.die.net/man/2/mkdir
-- Stack Overflow: Uploading a empty folder to github [duplicate] - https://stackoverflow.com/questions/8281322/uploading-a-empty-folder-to-github
-- Stack Overflow: How to append output to the end of a text file - https://stackoverflow.com/questions/6207573/how-to-append-output-to-the-end-of-a-text-file
-- Linus for Devices: How to append text to the end of a file in Linux - https://www.linuxfordevices.com/tutorials/linux/append-text-to-the-end-of-a-file-in-linux
-- Linus for Devices: The cat and more commands in Linux - https://www.linuxfordevices.com/tutorials/linux/cat-more-command-in-linux
-- Linusize: Grep Command in Linux - https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/
-- Cyberciti: How To Format Date For Display or Use In a Shell Script - https://www.cyberciti.biz/faq/linux-unix-formatting-dates-for-display/
-- Squash: Formatting and Displaying Dates with Bash Scripts in Linux - https://www.squash.io/formatting-and-displaying-dates-with-bash-scripts-in-linux/
-- Turling.com: Using the Linux Free Command With Examples      https://www.turing.com/kb/how-to-use-the-linux-free-command
-- Stack Overflow: How to create a file with todays date in the filename  https://stackoverflow.com/questions/48270960/how-to-create-a-file-with-todays-date-in-the-filename
-- Make Rech easier: How to Use Touch Command in Linux    https://www.maketecheasier.com/use-touch-command-in-linux/
-- Linus Config :Download file from URL on Linux using command line https://linuxconfig.org/download-file-from-url-on-linux-using-command-line
-- How to Geek: How to Use wget, the Ultimate Command Line Downloading Tool  https://www.howtogeek.com/281663/how-to-use-wget-the-ultimate-command-line-downloading-tool/
-- Linus Handbook: What's the Difference Between curl and Wget? https://linuxhandbook.com/curl-wget-difference/
-- The Linux Code: Demystifying the curl vs wget Debate for Linux Users - History - https://thelinuxcode.com/what-is-the-difference-between-wget-vs-curl/
-- Everything Curl - Command line options  https://everything.curl.dev/cmdline/options/index.html
-- Askubuntu: How to make a file (e.g. a .sh script) executable, so it can be run from a terminal https://askubuntu.com/questions/229589/how-to-make-a-file-e-g-a-sh-script-executable-so-it-can-be-run-from-a-termi
-- Runcloud: Mastering the Echo Command in Linux (with Practical Examples)  https://runcloud.io/blog/echo-command-in-linux
-- Digital Ocean: How To View and Update the Linux PATH Environment Variable  https://www.digitalocean.com/community/tutorials/how-to-view-and-update-the-linux-path-environment-variable
-- Pandas Pydata: pandas.read_json   https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_json.html
-- Python Doc: Datetime – Basic date & time types       https://docs.python.org/3/library/datetime.html
-- w3schools Python Date    https://www.w3schools.com/python/python_datetime.asp
-- Real Python: Using Python datetime to Work With Dates and Times     https://realpython.com/python-datetime/
-- Python Tutorial.net: Python datetime     https://www.pythontutorial.net/python-standard-library/python-datetime/
-- Dataquest: Python Datetime Tutorial: Manipulate Times, Dates, and Time Spans     https://www.dataquest.io/blog/python-datetime-tutorial/
-- Datagy: DateTime in Pandas and Python     https://datagy.io/pandas-datetime/
-- Python Doc: Datetime – pandas.to_datetime       https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html
-- Geeks For Geeks: Python | Pandas.to_datetime()       https://www.geeksforgeeks.org/python-pandas-to_datetime/
-- Geeks For Geeks: Python | Pandas DataFrame.set_index()       https://www.geeksforgeeks.org/python-pandas-dataframe-set_index/
-- Real Python: Visualizing Data in Python With Seaborn    https://realpython.com/python-seaborn/
-- Datagy: Seaborn in Python for Data Visualization   https://datagy.io/python-seaborn/
-- Seaborn: Choosing color palettes     https://seaborn.pydata.org/tutorial/color_palettes.html
+##### - All lectures 1-10 -  Computer Infrastructure - Ian McLoughlin
+##### - Linus Today: Linux mkdir Command Explained for Beginners (with examples) - https://www.linuxtoday.com/news/linux-mkdir-command-explained-for-beginners-with-examples/
+##### - Linux die.net: mkdir(2) - Linux man page  https://linux.die.net/man/2/mkdir
+##### - Stack Overflow: Uploading a empty folder to github [duplicate] - https://stackoverflow.com/questions/8281322/uploading-a-empty-folder-to-github
+##### - Stack Overflow: How to append output to the end of a text file - https://stackoverflow.com/questions/6207573/how-to-append-output-to-the-end-of-a-text-file
+##### - Linus for Devices: How to append text to the end of a file in Linux - https://www.linuxfordevices.com/tutorials/linux/append-text-to-the-end-of-a-file-in-linux
+##### - Linus for Devices: The cat and more commands in Linux - https://www.linuxfordevices.com/tutorials/linux/cat-more-command-in-linux
+##### - Linusize: Grep Command in Linux - https://linuxize.com/post/how-to-use-grep-command-to-search-files-in-linux/
+##### - Cyberciti: How To Format Date For Display or Use In a Shell Script - https://www.cyberciti.biz/faq/linux-unix-formatting-dates-for-display/
+##### - Squash: Formatting and Displaying Dates with Bash Scripts in Linux - https://www.squash.io/formatting-and-displaying-dates-with-bash-scripts-in-linux/
+##### - Turling.com: Using the Linux Free Command With Examples      https://www.turing.com/kb/how-to-use-the-linux-free-command
+##### - Stack Overflow: How to create a file with todays date in the filename  https://stackoverflow.com/questions/48270960/how-to-create-a-file-with-todays-date-in-the-filename
+##### - Make Rech easier: How to Use Touch Command in Linux    https://www.maketecheasier.com/use-touch-command-in-linux/
+##### - Linus Config :Download file from URL on Linux using command line https://linuxconfig.org/download-file-from-url-on-linux-using-command-line
+##### - How to Geek: How to Use wget, the Ultimate Command Line Downloading Tool  https://www.howtogeek.com/281663/how-to-use-wget-the-ultimate-command-line-downloading-tool/
+##### - Linus Handbook: What's the Difference Between curl and Wget? https://linuxhandbook.com/curl-wget-difference/
+##### - The Linux Code: Demystifying the curl vs wget Debate for Linux Users - History - https://thelinuxcode.com/what-is-the-difference-between-wget-vs-curl/
+##### - Everything Curl - Command line options  https://everything.curl.dev/cmdline/options/index.html
+##### - Askubuntu: How to make a file (e.g. a .sh script) executable, so it can be run from a terminal https://askubuntu.com/questions/229589/how-to-make-a-file-e-g-a-sh-script-executable-so-it-can-be-run-from-a-termi
+##### - Runcloud: Mastering the Echo Command in Linux (with Practical Examples)  https://runcloud.io/blog/echo-command-in-linux
+##### - Digital Ocean: How To View and Update the Linux PATH Environment Variable  https://www.digitalocean.com/community/tutorials/how-to-view-and-update-the-linux-path-environment-variable
+##### - Pandas Pydata: pandas.read_json   https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_json.html
+##### - Python Doc: Datetime – Basic date & time types       https://docs.python.org/3/library/datetime.html
+##### - w3schools Python Date    https://www.w3schools.com/python/python_datetime.asp
+##### - Real Python: Using Python datetime to Work With Dates and Times     https://realpython.com/python-datetime/
+##### - Python Tutorial.net: Python datetime     https://www.pythontutorial.net/python-standard-library/python-datetime/
+##### - Dataquest: Python Datetime Tutorial: Manipulate Times, Dates, and Time Spans     https://www.dataquest.io/blog/python-datetime-tutorial/
+##### - Datagy: DateTime in Pandas and Python     https://datagy.io/pandas-datetime/
+##### - Python Doc: Datetime – pandas.to_datetime       https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html
+##### - Geeks For Geeks: Python | Pandas.to_datetime()       https://www.geeksforgeeks.org/python-pandas-to_datetime/
+##### - Geeks For Geeks: Python | Pandas DataFrame.set_index()       https://www.geeksforgeeks.org/python-pandas-dataframe-set_index/
+##### - Real Python: Visualizing Data in Python With Seaborn    https://realpython.com/python-seaborn/
+##### - Datagy: Seaborn in Python for Data Visualization   https://datagy.io/python-seaborn/
+##### - Seaborn: Choosing color palettes     https://seaborn.pydata.org/tutorial/color_palettes.html
 
 
 
