@@ -43,6 +43,7 @@ Using python, import the following as per notebook
 `import seaborn as sns`
 
 `import datetime`
+<br><br>
 
 ## Repository Structure
 
@@ -51,15 +52,14 @@ Using python, import the following as per notebook
 This github folder contains the Project for this module. I have defined a GitHub Actions workflow named Automate Weather Script that automates the execution of a script `weather.sh` daily at 10 AM or via manual trigger. It ensures the results of the script are committed and pushed back to the repository for tracking. It allows manual execution if immediate updates are needed outside the scheduled time.
 
 I will go through each line of the script
-
+<br>
 
 ```
 name: Automate Weather Script
 ```
 
 This specifies the name of the workflow as it will appear in the Actions tab of the repository.
-
-<br><br>
+<br>
 
 ```
 on:
@@ -90,7 +90,7 @@ The `workflow_dispatch`allows the workflow to be triggered manually by a user vi
 ##### • Cron Tab Guru: Cron schedule expressions  (https://crontab.guru/)
 ##### • docs.github.com: Manually running a workflow https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow
 ##### • docs.github.com: on.workflow_dispatch.inputs https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
-
+<br>
 
 ```
 permissions:
@@ -101,7 +101,7 @@ This grants write access to the repository contents, allowing the workflow to co
 
 ##### *References*
 ##### • docs.github.com: Controlling permissions for GITHUB_TOKEN https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token
-
+<br>
 
 ```
 jobs:
@@ -115,7 +115,7 @@ Ubuntu-latest provides a Linux environment with the latest stable Ubuntu version
 ##### *References*
 ##### • github blog: GitHub Actions: Ubuntu-latest workflows will use Ubuntu-22.04 https://github.blog/changelog/2022-11-09-github-actions-ubuntu-latest-workflows-will-use-ubuntu-22-04/
 ##### • docs.github.com: Choosing the runner for a job https://docs.github.com/en/actions/writing-workflows/choosing-where-your-workflow-runs/choosing-the-runner-for-a-job
-
+<br>
 
 ```
     - name: Checkout Repository
@@ -125,7 +125,7 @@ Step 1 is to check out the Repository with a description name for the step `Chec
 
 ##### *References*
 ##### • github.com: Checkout https://github.com/actions/checkout   noting that this documentation is using Checkout V4 but Checkout V3 is working in my code. 
-
+<br>
 
 ```
 - name: Execute weather.sh
@@ -138,7 +138,7 @@ Step 2 is to execute the file.  The `name` indicates that this step executes the
 ##### *References*
 ##### • itsfoss.com: How to Run a Shell Script in Linux [Essentials Explained for Beginners] https://itsfoss.com/run-shell-script-linux/
 ##### • Geeks for Geeks: What Does "chmod +x " Do and How to Use It? https://www.geeksforgeeks.org/what-does-chmod-x-do-and-how-to-use-it/
-
+<br>
 
 ```
     - name: Commit and Push Changes
@@ -178,7 +178,7 @@ Lastly, this pushes the committed changes to the repository’s remote branch.
 ##### • Github.com: Git Commit https://github.com/git-guides/git-commit
 ##### • Dev.to: Git Workflow: A Complete Guide for Managing Your Codebase Effectively  Git Workflow: A Complete Guide for Managing Your Codebase Effectively - DEV Community
 ##### • docs.github.com: Guides for Github Actions - https://docs.github.com/en/actions/guides
-
+<br><br>
 
 **2.  data folder**
 
@@ -192,22 +192,23 @@ This folder contains the outputs for the following tasks.
         - Task 5: Download Today's Weather Data
         - Task 6: Timestamp the Data
         - Task 7: Write the Script
-
+<br><br>
 
 **3. Images**
 
 This folder contains all the images used in the README & Notebook Tasks 1-9
-
+<br><br>
 
 **4. gitignore**
-
+<br><br>
 
 **5. README.md**
-
+<br><br>
 
 **6. requirements.txt**
 
 This folder contains any dependent installations
+<br><br>
 
 **7. `weather.ipynb`**
 
@@ -224,12 +225,12 @@ Please refer to the Jupyter notebook for detailed explanations of each task
             -   Task 7: Write the Script
             -   Task 9: Pandas
     - References
-
+<br><br>
 
 **8. weather.sh**
 
 This is the executable program outlined in Task 9. Please refer to the Jupyter notebook for detailed explanation.
-
+<br><br>
 
 ## References 
 All references are listed with each task in the Jupyter Notebook.
