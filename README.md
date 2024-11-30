@@ -184,23 +184,23 @@ Lastly, this pushes the committed changes to the repository’s remote branch.
 
 This folder contains the outputs for the following tasks.
 
-    - timestamps folder contains the following:
+- timestamps folder contains the following:
 
-        - Task 1: Create Directory Structure
+    - Task 1: Create Directory Structure
 
-        - Task 2: Timestamps
+    - Task 2: Timestamps
 
-        - Task 3: Formatting Timestamps
+    - Task 3: Formatting Timestamps
 
-        - Task 4: Create Timestamped Files
+    - Task 4: Create Timestamped Files
 
-    -  weather folder contains the following:
+-  weather folder contains the following:
 
-        - Task 5: Download Today's Weather Data
+    - Task 5: Download Today's Weather Data
 
-        - Task 6: Timestamp the Data
+    - Task 6: Timestamp the Data
 
-        - Task 7: Write the Script
+    - Task 7: Write the Script
 <br><br>
 
 **3. Images**
@@ -227,27 +227,27 @@ This folder contains any dependent installations
 
 Please refer to the Jupyter notebook for detailed explanations of each task
 
-    - Table of Contents
+- Table of Contents
 
-        - Description
+    - Description
 
-        - Explore the Tasks 
+    - Explore the Tasks 
 
-            -   Task 1: Create Directory Structure
+        -   Task 1: Create Directory Structure
 
-            -   Task 2: Timestamps
+        -   Task 2: Timestamps
 
-            -   Task 3: Formatting Timestamps
+        -   Task 3: Formatting Timestamps
 
-            -   Task 4: Create Timestamped Files
+        -   Task 4: Create Timestamped Files
 
-            -   Task 5: Download Today's Weather Data
+        -   Task 5: Download Today's Weather Data
 
-            -   Task 6: Timestamp the Data
+        -   Task 6: Timestamp the Data
 
-            -   Task 7: Write the Script
+        -   Task 7: Write the Script
 
-            -   Task 9: Pandas
+        -   Task 9: Pandas
 
     - References
 <br><br>
