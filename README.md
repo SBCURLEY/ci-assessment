@@ -85,10 +85,10 @@ CRON syntax:
 The `workflow_dispatch`allows the workflow to be triggered manually by a user via the GitHub Actions UI in the repository.
 `inputs` is an optional section for specifying parameters, which in this case is left empty.
 
-###### *References*
-###### • Cron Tab Guru: Cron schedule expressions  (https://crontab.guru/)
-###### • docs.github.com: Manually running a workflow https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow
-###### • docs.github.com: on.workflow_dispatch.inputs https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
+##### *References*
+##### • Cron Tab Guru: Cron schedule expressions  (https://crontab.guru/)
+##### • docs.github.com: Manually running a workflow https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/manually-running-a-workflow
+##### • docs.github.com: on.workflow_dispatch.inputs https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
 
 
 ```
