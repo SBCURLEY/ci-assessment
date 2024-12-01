@@ -5,7 +5,7 @@
 ![Image from Virtual Metric.com](./images/image_readme.png)
 
 This repository contains my assessment submission for the module Computer Infrastructure.
-My github repository link is as follows:
+My GitHub repository link is as follows:
 
 [SBCURLEY/ci-assessment](https://github.com/SBCURLEY/ci-assessment)
 
@@ -15,7 +15,7 @@ I had to install the below to get started on this repository
 - Python 
 - Visual Studio Code
 - Cmder
-- github Codespace
+- GitHub Codespace
 
 
 ## Usage
@@ -49,7 +49,7 @@ Using python, import the following as per notebook
 
 **1. .github/workflows**
 
-This github folder contains the Project for this module. I have defined a GitHub Actions workflow named Automate Weather Script that automates the execution of a script `weather.sh` daily at 10 AM or via manual trigger. It ensures the results of the script are committed and pushed back to the repository for tracking. It allows manual execution if immediate updates are needed outside the scheduled time.
+This GitHub folder contains the Project for this module. I have defined a GitHub Actions workflow named Automate Weather Script that automates the execution of a script `weather.sh` daily at 10 AM or via manual trigger. It ensures the results of the script are committed and pushed back to the repository for tracking. It allows manual execution if immediate updates are needed outside the scheduled time.
 
 I will go through each line of the script
 <br><br>
@@ -215,7 +215,7 @@ This gitignore file specifies intentionally untracked files that Git should igno
 
 **5. README.md**
 
-This file serves as the first point of contact for users and developers who want to understand the purpose, setup, and usage of mt repository.
+This file serves as the first point of contact for users and developers who want to understand the purpose, setup, and usage of my repository.
 <br><br>
 
 **6. requirements.txt**
