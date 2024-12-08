@@ -1,9 +1,15 @@
-# My Computer Infrastructre Assessment Repository
+# My Computer Infrastructure Assessment Repository
 
 **By Sharon Curley (G00438863@atu.ie)**
 
-![Image from Virtual Metric.com](./images/image_readme.png)
+<p align="center">
+    <img width="650" height="350" src="./images/image_readme.png" alt="Sublime's custom image"/>
+</p>
 
+
+###### [Image from Appstekcorp](https://appstekcorp.com/blog/deliver-enhanced-business-value-with-managed-services/)
+
+## Description
 This repository contains my assessment submission for the module Computer Infrastructure.
 My GitHub repository link is as follows:
 
@@ -11,18 +17,21 @@ My GitHub repository link is as follows:
 
 
 ## Installation
-I had to install the below to get started on this repository
-- Python 
-- Visual Studio Code
-- Cmder
-- GitHub Codespace
+I had to install the below to get started on this repository.
+- [Python](https://www.python.org/downloads/)
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [Cmder](https://cmder.app/)
+- [GitHub Codespace](https://github.com/features/codespaces)
 
 
 ## Usage
-Once the above installations are complete, you can run the application using the following on the Command Line. `weather.sh` is a shell script, so
-should be run using a shell interpreter like `bash` or `sh` (as executable)
+Once the above installations are complete, you can run the below application.
 
 `./weather.sh`
+
+You can run a Jupyter notebook which contains Python code that explains how to use scikit-learn to perform some machine learning.
+
+`weather.ipynb`
 
 ## Dependencies
 The following libraries are required to execute my notebook:
@@ -30,9 +39,9 @@ The following libraries are required to execute my notebook:
 - `numpy`: It contains functionality for multidimensional arrays, high-level mathematical functions such as linear algebra operations.
 - `pandas`: Fundamental data analysis and manipulation library built on top of the Python programming language. It offers data structures and operations for manipulating numerical tables and time series.
 - `seaborn`: Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
-- `datetime`: The datetime is a built-in module that provides classes for manipulating dates and times
+- `datetime`: The datetime is a built-in module that provides classes for manipulating dates and times.
 
-Using python, import the following as per notebook
+Using python, import the following as per notebook-
 
 `import matplotlib.pyplot as plt`
 
@@ -45,13 +54,20 @@ Using python, import the following as per notebook
 `import datetime`
 <br><br>
 
+There is a requirements.txt file in this repository, so you could install the required packages by running the following code:
+
+```
+pip install -r requirements.txt
+```
+
+
 ## Repository Structure
 
 **1. .github/workflows**
 
 This GitHub folder contains the Project for this module. I have defined a GitHub Actions workflow named Automate Weather Script that automates the execution of a script `weather.sh` daily at 10 AM or via manual trigger. It ensures the results of the script are committed and pushed back to the repository for tracking. It allows manual execution if immediate updates are needed outside the scheduled time.
 
-I will go through each line of the script
+I will go through each line of the script.
 <br><br>
 
 ```
@@ -150,7 +166,7 @@ Step 2 is to execute the file.  The `name` indicates that this step executes the
         git push
 ```
 
-Step 3 is to commit and push changes using the label `Commit and Push Changes` 
+Step 3 is to commit and push changes using the label `Commit and Push Changes`.
 
 Command Details:  
 
@@ -205,7 +221,7 @@ This folder contains the outputs for the following tasks.
 
 **3. Images**
 
-This folder contains all the images used in the README & Notebook Tasks 1-9
+This folder contains all the images used in the README & Notebook Tasks 1-9.
 <br><br>
 
 **4. gitignore**
@@ -220,14 +236,14 @@ This file serves as the first point of contact for users and developers who want
 
 **6. requirements.txt**
 
-This folder contains any dependent installations
+This folder contains any dependent installations.
 <br><br>
 
 **7. `weather.ipynb`**
 
-Please refer to the Jupyter notebook for detailed explanations of each task
+Please refer to the Jupyter notebook for detailed explanations of each task.
 
-- Table of Contents
+- Table of Contents:
 
     - Description
 

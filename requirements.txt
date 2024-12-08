@@ -1,1 +1,6 @@
 pandas
+matplotlib.pyplot
+numpy
+seaborn
+datetime
+scikit-learn
