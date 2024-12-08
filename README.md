@@ -243,7 +243,7 @@ This folder contains any dependent installations.
 
 Please refer to the Jupyter notebook for detailed explanations of each task.
 
-- Table of Contents:
+- Table of Contents:git add .
 
     - Description
 
